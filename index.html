@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Money Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💰 Money Tracker</h1>
+
+<div class="container">
+
+  <input id="amount" type="number" placeholder="Amount (Tsh)">
+  <input id="note" type="text" placeholder="Note">
+
+  <select id="category">
+    <option value="Food">Food</option>
+    <option value="Transport">Transport</option>
+    <option value="School">School</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <button onclick="addExpense()">Add Expense</button>
+
+  <select id="filter" onchange="renderExpenses()">
+    <option value="All">All</option>
+    <option value="Food">Food</option>
+    <option value="Transport">Transport</option>
+    <option value="School">School</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <ul id="list"></ul>
+
+  <h2 id="total">Total: 0 Tsh</h2>
+<canvas id="myChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
